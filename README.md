@@ -1,7 +1,13 @@
 # googlebooks
 
+A Simple app to search for books.  You can save the books you like and it even has a link to purchase from Google.
+Uses Google API and MERN STACK TECHNOLOGIES.  Mongo Database, EXPRESS, REACT, NODEJS.
+
 ##GitHub Link
 https://github.com/brianra2nil/googlebooks
+
+##Deployed Heroku Link
+https://safe-stream-31431.herokuapp.com/
 
 
 
