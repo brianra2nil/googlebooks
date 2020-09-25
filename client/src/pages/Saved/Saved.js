@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import API from '../../utils/API'
+import {
+  Card, CardImg, CardText, CardBody, CardLink,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
 
 const Saved = () => {
 
@@ -33,10 +37,14 @@ const Saved = () => {
               <h3>{book.title}</h3>
               <h4>Authors: {book.authors}</h4>
               <h4>Description: {book.description}</h4>
-              <h5>googleId: {book.googleId}</h5>
-          <h5>link: {book.infoLink}</h5>
-              <button onClick={() => savedState.handleDeleteSaved(book._id)}>Delete</button>
+              
+              <Button color="primary" href={book.link}>Google Books Link</Button>
+              <br></br>
+              <br></br>
+              <Button color="primary" onClick={() => savedState.handleDeleteSaved(book._id)}>Delete</Button>
+              <hr></hr>
             </div>
+         
           ))
         ) : null
       }
