@@ -103,7 +103,7 @@ const Book = props => {
   <img className="image" src={props.book.image} alt="Card image cap" />
   <CardBody>
     <CardText>{props.book.description}</CardText>
-    <CardLink>onClick={() => props.handleSaveBook(props.book.googleId)}>Save</CardLink>
+    <CardLink onClick={() => props.handleSaveBook(props.book.googleId)}>Save</CardLink>
     <CardLink href={props.book.link}>Google Books Link</CardLink>
   </CardBody>
 </Card>
