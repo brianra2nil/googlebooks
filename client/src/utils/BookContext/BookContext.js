@@ -5,7 +5,7 @@ const BookContext = createContext({
   media: [],
   handleInputChange: () => { },
   handleSearchGoogle: () => { },
-  handleSaveGoogle: () => { }
+  handleSaveBook: () => { }
 })
 
 export default BookContext
