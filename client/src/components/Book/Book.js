@@ -10,7 +10,7 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import {
   Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle
+  CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import "./book.css"
 
@@ -94,7 +94,7 @@ const Book = props => {
 //   </Card>
 
 
-<div>
+/* <div>
 <Card>
   <CardBody>
     <CardTitle className="title">{props.book.title}</CardTitle>
@@ -105,6 +105,27 @@ const Book = props => {
     <CardText>{props.book.description}</CardText>
     <CardLink onClick={() => props.handleSaveBook(props.book.googleId)}>Save</CardLink>
     <CardLink href={props.book.link}>Google Books Link</CardLink>
+  </CardBody>
+</Card>
+</div> */
+
+
+<div>
+<Card>
+  <CardImg className="image" src={props.book.image} alt="Card image cap" />
+  <CardBody>
+    <CardTitle className="title">{props.book.title}</CardTitle>
+    <CardSubtitle>Written by: {props.book.authors}</CardSubtitle>
+    <CardText>{props.book.description}</CardText>
+    <Button 
+    size="small" 
+    color="primary"
+    onClick={() => props.handleSaveBook(props.book.googleId)}>
+    Save
+    </Button>
+    <br></br>
+    <br></br>
+    <Button color="primary" href={props.book.link}>Google Books Link</Button>
   </CardBody>
 </Card>
 </div>
